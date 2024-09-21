@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({style} : any) => {
   return (
-    <div id="Contact" className='h-screen border-t-orange-800 w-full'>
+    <div id="Contact" className={`${style}`}>
       test
     </div>
   )

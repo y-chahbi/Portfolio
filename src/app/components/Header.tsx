@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import './Header.css'
 
 
-const Header = () => {
+const Header = ({style} : any) => {
     return (
-        <div className="Header w-full h-[110px] flex justify-between items-center px-[50px]">
+        <div className={style}>
             <div className="left-side ">
                 <div className='LogoHexagon absolute h-[48px] bg-[var(--primaryColor)] flex items-center justify-center'></div>
                 <div className='MoverLogo z-10 LogoHexagon relative h-[48px] bg-[var(--primaryColor)] flex items-center justify-center

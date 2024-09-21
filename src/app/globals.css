@@ -10,6 +10,25 @@
   --trdColor: #ccd6f6;
 }
 
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Inconsolata.ttf') format('truetype');
+  font-weight: '100 300';
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto.ttf') format('truetype');
+  font-weight: '100 300';
+  font-style: normal;
+}
+
+.LogoHexagon {
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
