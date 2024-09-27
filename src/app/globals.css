@@ -10,12 +10,21 @@
   --trdColor: #ccd6f6;
 }
 
+
+
 @font-face {
   font-family: 'Inconsolata';
   src: url('fonts/Inconsolata.ttf') format('truetype');
   font-weight: '100 300';
   font-style: normal;
 }
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('fonts/Calibre1.otf') format('truetype');
+    font-weight: '100 300';
+    font-style: normal;
+  }
 
 @font-face {
   font-family: 'Roboto';

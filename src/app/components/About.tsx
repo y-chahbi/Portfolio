@@ -2,21 +2,22 @@ import React from 'react'
 import img from './../data/ychahbi.jpeg'
 import Image from 'next/image'
 import Link from 'next/link'
+import Skill from './Helpers/Skill'
+import CompTitle from './Helpers/CompTitle'
 
 
 
 
 const About = ({style} : any) => {
+
+    const Myskills = ["JavaScript (ES6+)", "TypeScript", "React", "Eleventy", "Node.js", "WordPress"]
+
     return (
         <div id="About" className={`${style}`}>
             <div className='Box w-[1000px] m-[auto]'>
-                <div className='BoxHead flex items-center justify-start'>
-                    <p className='Number text-[26px] text-[var(--primaryColor)] mr-[10px] flex-none'>01.</p>
-                    <p className='Title text-[var(--trdColor)] text-[30px] font-[Roboto] font-bold flex-none '>About Me</p>
-                    <span className='w-[30%] mx-[20px] h-[0.2px] bg-[var(--trdColor)]'></span>
-                </div>
+                <CompTitle number="01. " title="About Me" width="w-[30%]"/>
                 <div className='AboutParImageHolder flex justify-between my-[30px]'>
-                    <div className='text-[var(--seconderyColor)] w-[62%] text-[19px] font-[Roboto]'>
+                    <div className='text-[var(--seconderyColor)] w-[60%] text-[18px] font-normal font-[Roboto]'>
                         <div className='Main'>
                             <p className='mb-[20px]'>
                                 Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
@@ -40,20 +41,15 @@ const About = ({style} : any) => {
                                 Here are a few technologies I’ve been working with recently:
                             </p>
                         </div>
-                        <div className='Skilles flex justify-between'>
-                            <div className='Skil flex flex-row items-center'>
-                                <div className={`Icon w-0 h-0 relative border-t-[5px] border-t-transparent border-l-[10px] border-l-[var(--primaryColor)] border-b-[5px] border-b-transparent
-                                                mr-[15px]`}>
-                                    <div className='{`Icon w-0 h-0 absolute -top-[3px] -left-[9px] border-t-[3px] border-t-transparent border-l-[6px] border-l-[var(--background)] border-b-[3px] border-b-transparent
-                                                mr-[15px]`'>
-
-                                    </div>
-                                </div>
-                                <div className='SkillName'>JavaScript (ES6+)</div>
-                            </div>
+                        <div className='Skilles flex justify-between flex-wrap text-[15px] font-[Inconsolata]'>
+                            {
+                                Myskills.map((skill, index) => {
+                                    return <Skill key={index} name={`${skill}`}/>
+                                })
+                            }
                         </div>
                     </div>
-                    <div className='ImageHolder relative group'>
+                    <div className='ImageHolder relative group mt-[20px]'>
 
                         <div className='BoderdHolder relative top-0 left-0 rounded-md w-[300px] h-[300px] border-2 border-[var(--primaryColor)]
                             group-hover:top-1 group-hover:left-1 transition-all duration-200 ease-in-out'>

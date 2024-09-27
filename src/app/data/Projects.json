@@ -1,0 +1,223 @@
+[
+    {
+        "title": "Integrating Algolia Search with WordPress Multisite",
+        "deskription": "Integrating Algolia Search with WordPress Multisite",
+        "UsedLanguages": [
+            "Algolia",
+            "WordPress",
+            "PHP"
+        ],
+        "ProjectLink" : "https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c",
+        "GithubLink" : ""
+    },
+    {
+        "title": "Time Noteworthy Projects",
+        "deskription": "A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS",
+        "UsedLanguages": [
+            "Next.js",
+            "Tailwind CSS",
+            "Firebase"
+        ],
+        "ProjectLink" : "https://time-to-have-more-fun.now.sh/",
+        "GithubLink" : "https://github.com/bchiang7/time-to-have-more-fun"
+    },
+    {
+        "title": "Building a Headless Mobile App CMS From Scratch",
+        "deskription": "Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement",
+        "UsedLanguages": [
+            "Node",
+            "Express",
+            "Firebase",
+            "Vue"
+        ],
+        "ProjectLink" : "https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c",
+        "GithubLink" : ""
+    },
+    {
+        "title": "OpenAI API Integration for Chatbots",
+        "deskription": "Building a chatbot using OpenAI's GPT-3 API with a focus on customer service solutions.",
+        "UsedLanguages": [
+            "Node.js",
+            "OpenAI API",
+            "JavaScript"
+        ],
+        "ProjectLink" : "https://github.com/openai/gpt3-chatbot",
+        "GithubLink" : "https://github.com/example/openai-chatbot"
+    },
+    {
+        "title": "React Native Mobile App for Fitness Tracking",
+        "deskription": "Developed a mobile app to track workouts and fitness goals using React Native and Firebase.",
+        "UsedLanguages": [
+            "React Native",
+            "Firebase",
+            "Expo"
+        ],
+        "ProjectLink" : "https://play.google.com/store/apps/details?id=fitness-tracker",
+        "GithubLink" : "https://github.com/example/fitness-tracker"
+    },
+    {
+        "title": "E-commerce Website with Next.js and Stripe",
+        "deskription": "Built a complete e-commerce solution using Next.js, Tailwind CSS, and integrated with Stripe for payment processing.",
+        "UsedLanguages": [
+            "Next.js",
+            "Tailwind CSS",
+            "Stripe API"
+        ],
+        "ProjectLink" : "https://my-ecommerce.com",
+        "GithubLink" : "https://github.com/example/ecommerce"
+    },
+    {
+        "title": "Machine Learning Model Deployment using Flask",
+        "deskription": "Deployed a machine learning model for image classification using Flask and TensorFlow.",
+        "UsedLanguages": [
+            "Python",
+            "Flask",
+            "TensorFlow"
+        ],
+        "ProjectLink" : "https://mymlmodel.com",
+        "GithubLink" : "https://github.com/example/ml-deployment"
+    },
+    {
+        "title": "Weather Forecasting App with OpenWeather API",
+        "deskription": "A weather forecasting web app built using the OpenWeather API and React.",
+        "UsedLanguages": [
+            "React",
+            "OpenWeather API",
+            "JavaScript"
+        ],
+        "ProjectLink" : "https://weather-app.com",
+        "GithubLink" : "https://github.com/example/weather-app"
+    },
+    {
+        "title": "Personal Portfolio Website",
+        "deskription": "A personal portfolio website showcasing my projects, built with HTML, CSS, and JavaScript.",
+        "UsedLanguages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "ProjectLink" : "https://myportfolio.com",
+        "GithubLink" : "https://github.com/example/portfolio"
+    },
+    {
+        "title": "Full-Stack Blogging Platform",
+        "deskription": "A full-stack blogging platform built with Node.js, Express, and MongoDB.",
+        "UsedLanguages": [
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "ProjectLink" : "https://myblogplatform.com",
+        "GithubLink" : "https://github.com/example/blog-platform"
+    },
+    {
+        "title": "Task Management App with Vue.js",
+        "deskription": "A task management web app developed using Vue.js and Firebase for real-time data updates.",
+        "UsedLanguages": [
+            "Vue.js",
+            "Firebase",
+            "JavaScript"
+        ],
+        "ProjectLink" : "https://mytaskapp.com",
+        "GithubLink" : "https://github.com/example/task-app"
+    },
+    {
+        "title": "AI-Powered Image Generation Tool",
+        "deskription": "An AI-powered tool for generating images based on text input, built with Python and TensorFlow.",
+        "UsedLanguages": [
+            "Python",
+            "TensorFlow",
+            "Keras"
+        ],
+        "ProjectLink" : "https://imagegenerator.com",
+        "GithubLink" : "https://github.com/example/image-generator"
+    },
+    {
+        "title": "Real-Time Messaging App with WebSockets",
+        "deskription": "A real-time messaging application using WebSockets and Node.js for instant communication.",
+        "UsedLanguages": [
+            "Node.js",
+            "WebSockets",
+            "Express"
+        ],
+        "ProjectLink" : "https://realtime-messaging.com",
+        "GithubLink" : "https://github.com/example/messaging-app"
+    },
+    {
+        "title": "Data Visualization Dashboard",
+        "deskription": "A data visualization dashboard built with D3.js and React for displaying complex datasets.",
+        "UsedLanguages": [
+            "D3.js",
+            "React",
+            "JavaScript"
+        ],
+        "ProjectLink" : "https://datadashboard.com",
+        "GithubLink" : "https://github.com/example/data-dashboard"
+    },
+    {
+        "title": "Music Streaming App with React and Node.js",
+        "deskription": "A music streaming web application built with React for the frontend and Node.js for the backend.",
+        "UsedLanguages": [
+            "React",
+            "Node.js",
+            "MongoDB"
+        ],
+        "ProjectLink" : "https://mystreamingapp.com",
+        "GithubLink" : "https://github.com/example/music-streaming"
+    },
+    {
+        "title": "Building a Serverless Function with AWS Lambda",
+        "deskription": "Learn how to deploy a serverless function on AWS Lambda to handle background tasks.",
+        "UsedLanguages": [
+            "AWS Lambda",
+            "Node.js",
+            "Serverless"
+        ],
+        "ProjectLink" : "https://aws-lambda-function.com",
+        "GithubLink" : "https://github.com/example/aws-lambda-function"
+    },
+    {
+        "title": "Social Media Integration with OAuth 2.0",
+        "deskription": "Integrated OAuth 2.0 for social media login in a web application built with Node.js and React.",
+        "UsedLanguages": [
+            "Node.js",
+            "OAuth 2.0",
+            "React"
+        ],
+        "ProjectLink" : "https://mysocialloginapp.com",
+        "GithubLink" : "https://github.com/example/oauth-integration"
+    },
+    {
+        "title": "Creating a GraphQL API with Apollo Server",
+        "deskription": "Built a GraphQL API using Apollo Server and MongoDB for querying complex data structures.",
+        "UsedLanguages": [
+            "GraphQL",
+            "Apollo Server",
+            "MongoDB"
+        ],
+        "ProjectLink" : "https://graphql-api.com",
+        "GithubLink" : "https://github.com/example/graphql-api"
+    },
+    {
+        "title": "Blockchain-Based Voting System",
+        "deskription": "Developed a decentralized voting system using blockchain technology and Ethereum smart contracts.",
+        "UsedLanguages": [
+            "Solidity",
+            "Ethereum",
+            "Web3.js"
+        ],
+        "ProjectLink" : "https://blockchain-voting.com",
+        "GithubLink" : "https://github.com/example/blockchain-voting"
+    },
+    {
+        "title": "Real-Time Stock Price Tracker",
+        "deskription": "A web app that provides real-time stock prices using the Alpha Vantage API and React.",
+        "UsedLanguages": [
+            "React",
+            "Alpha Vantage API",
+            "JavaScript"
+        ],
+        "ProjectLink" : "https://stocktracker.com",
+        "GithubLink" : "https://github.com/example/stock-tracker"
+    }
+]
