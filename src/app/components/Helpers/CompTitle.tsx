@@ -3,11 +3,11 @@ import { twMerge } from 'tailwind-merge';
 
 
 type props = {
-    number: string,
-    title: string,
-    width: string,
-    style: string
-}
+    number: string;
+    title: string;
+    width: string;
+    style?: string;  // Make style optional by adding a question mark
+};
 
 // {`Line bg-[var(--seconderyColor)] h-[.1px] w-${width} grow mx-[30px]`}
 const CompTitle = ({number, title, width, style = ""} : props) => {
