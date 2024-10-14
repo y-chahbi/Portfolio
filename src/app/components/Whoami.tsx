@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 interface WhoamiProps {
   classname?: string; // Use string if style is optional; use 'string | undefined' if not.
@@ -9,14 +10,17 @@ interface WhoamiProps {
 
 const Whoami = ({ classname }: WhoamiProps) => {
   const [isHovred, setIsHovered] = useState(false);
+  const [IsLoad, setIsLoad] = useState(false);
+
+  useEffect(() => {setIsLoad(prev => true)}, []);
 
   return (
-    <div id="Whoami" className={`${classname}`}>
+    <div id="Whoami" className={twMerge(classname, " transform ease-in transition-all")}>
       <div className="contant w-[1000px] m-[auto]">
-        <p className="introduction block">Hi, my name is </p>
-        <p className="MyName text-[var(--trdColor)] text-[80px] font-bold font-[Roboto] block">Chahbi Youssef.</p>
-        <p className="WhatIdo text-[var(--seconderyColor)] text-[70px] font-bold font-[Roboto] block">I build things for the web.</p>
-        <p className="Description text-[var(--seconderyColor)] text-[18px] font-[Roboto] w-[600px] my-[20px] block">
+          <p className={twMerge("introduction block delay-100 transition-opacity duration-200", IsLoad ? " opacity-100 " : " opacity-0 ")}>Hi, my name is </p>
+          <p className={twMerge("MyName text-[var(--trdColor)] text-[80px] font-bold font-[Roboto] block  delay-200 transition-opacity duration-300", IsLoad ? " opacity-100 " : " opacity-0 ")}>Chahbi YYYoussef.</p>
+          <p className={twMerge("WhatIdo text-[var(--seconderyColor)] text-[70px] font-bold font-[Roboto] block  delay-300 transition-opacity duration-400", IsLoad ? " opacity-100 " : " opacity-0 ")}>I build things for the web.</p>
+          <p className={twMerge("Description text-[var(--seconderyColor)] text-[18px] font-[Roboto] w-[600px] my-[20px] block  delay-400 transition-opacity duration-500", IsLoad ? " opacity-100 " : " opacity-0 ")}>
           I’m a software engineer specializing in building (and occasionally designing)
           exceptional digital experiences. Currently, I’m focused on building accessible,
           human-centered products at{" "}
