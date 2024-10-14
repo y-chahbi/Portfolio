@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import CompTitle from './Helpers/CompTitle';
 import projects from '../data/Projects.json';
 import ProjectItem from './Helpers/ProjectItem';
@@ -11,18 +11,9 @@ type NoteworthyProps = {
 
 const Noteworthy: React.FC<NoteworthyProps> = ({ classname }) => {
   const [loadMore, setLoadMore] = useState(true);
-  const [opacity, setOpacity] = useState("opacity-0");
-
-  useEffect(() => {
-    // You can add any side effects here if needed
-  }, [opacity]);
 
   return (
-    <div
-      id="Noteworthy"
-      onLoad={() => setOpacity("opacity-100")} // Assuming you want this to run on component mount
-      className={twMerge(classname, opacity, " transition-opacity duration-1000 ease-in-out delay-500")}
-    >
+    <div id="Noteworthy" className={twMerge(classname, " mt-[200px]")}>
       <div className='Box w-[1000px]'>
         <CompTitle number="" title="Other Noteworthy Projects" width="" classname="justify-center font-bold text-[24px]" />
         <div className='SecondTil text-[16px] text-[var(--primaryColor)] font-[Inconsolata] flex mt-[10px] justify-center'>view the archive</div>
@@ -58,7 +49,7 @@ const Noteworthy: React.FC<NoteworthyProps> = ({ classname }) => {
             <div className='backButton p-[10px] absolute border-[1px] border-[var(--primaryColor)]
                 w-[140px] h-[60px] flex justify-center items-center
                 text-[var(--primaryColor)] bg-[var(--background)] rounded-md transition-hover ease-in-out duration-150 hover:-translate-y-1 hover:-translate-x-1 hover:cursor-pointer'>
-              {loadMore ? "Show Less" : "Show More"}
+              {!loadMore ? "Show Less" : "Show More"}
             </div>
           </div>
         </div>

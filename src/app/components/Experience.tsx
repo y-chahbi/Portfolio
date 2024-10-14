@@ -28,7 +28,7 @@ const Experience: React.FC<ExperienceProps> = ({ classname }) => {
   };
 
   return (
-    <div id="Experience" className={`${classname}`}>
+    <div id="Experience" className={`${classname} mt-[200px]`}>
       <div className="Box w-[700px]">
         <CompTitle number="02. " title="Where I've Worked" width="grow w-1" />
         <div className="ContentData flex flex-row mt-[40px]">
