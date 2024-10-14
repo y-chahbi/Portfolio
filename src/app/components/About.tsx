@@ -6,14 +6,14 @@ import Skill from './Helpers/Skill';
 import CompTitle from './Helpers/CompTitle';
 
 interface AboutProps {
-  style?: string; // Specify the correct type for the style prop
+  classname?: string; // Specify the correct type for the style prop
 }
 
-const About: React.FC<AboutProps> = ({ style }) => {
+const About: React.FC<AboutProps> = ({ classname }) => {
   const Myskills = ["JavaScript (ES6+)", "TypeScript", "React", "Eleventy", "Node.js", "WordPress"];
 
   return (
-    <div id="About" className={`${style}`}>
+    <div id="About" className={`${classname}`}>
       <div className="Box w-[1000px] m-[auto]">
         <CompTitle number="01. " title="About Me" width="w-[30%]" />
         <div className="AboutParImageHolder flex justify-between my-[30px]">

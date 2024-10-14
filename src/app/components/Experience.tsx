@@ -6,10 +6,10 @@ import Exper from './Helpers/Exper';
 import CompTitle from './Helpers/CompTitle';
 
 interface ExperienceProps {
-  style?: string; // Define the style prop as an optional string
+  classname?: string; // Define the classname prop as an optional string
 }
 
-const Experience: React.FC<ExperienceProps> = ({ style }) => {
+const Experience: React.FC<ExperienceProps> = ({ classname }) => {
 
   // TailwindCSS class strings
   const CompanyStyle = `py-[10px] text-[var(--trdColor)] border-l-[.1px] border-[var(--seconderyColor)] 
@@ -28,7 +28,7 @@ const Experience: React.FC<ExperienceProps> = ({ style }) => {
   };
 
   return (
-    <div id="Experience" className={`${style}`}>
+    <div id="Experience" className={`${classname}`}>
       <div className="Box w-[700px]">
         <CompTitle number="02. " title="Where I've Worked" width="grow w-1" />
         <div className="ContentData flex flex-row mt-[40px]">

@@ -4,14 +4,14 @@ import { useState } from "react";
 import Link from "next/link";
 
 interface WhoamiProps {
-  style?: string; // Use string if style is optional; use 'string | undefined' if not.
+  classname?: string; // Use string if style is optional; use 'string | undefined' if not.
 }
 
-const Whoami = ({ style }: WhoamiProps) => {
+const Whoami = ({ classname }: WhoamiProps) => {
   const [isHovred, setIsHovered] = useState(false);
 
   return (
-    <div id="Whoami" className={`${style}`}>
+    <div id="Whoami" className={`${classname}`}>
       <div className="contant w-[1000px] m-[auto]">
         <p className="introduction block">Hi, my name is </p>
         <p className="MyName text-[var(--trdColor)] text-[80px] font-bold font-[Roboto] block">Chahbi Youssef.</p>

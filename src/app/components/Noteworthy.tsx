@@ -6,10 +6,10 @@ import ProjectItem from './Helpers/ProjectItem';
 import { twMerge } from 'tailwind-merge';
 
 type NoteworthyProps = {
-  style?: string; // Define the style prop as optional and as a string
+  classname?: string; // Define the classname prop as optional and as a string
 };
 
-const Noteworthy: React.FC<NoteworthyProps> = ({ style }) => {
+const Noteworthy: React.FC<NoteworthyProps> = ({ classname }) => {
   const [loadMore, setLoadMore] = useState(true);
   const [opacity, setOpacity] = useState("opacity-0");
 
@@ -21,10 +21,10 @@ const Noteworthy: React.FC<NoteworthyProps> = ({ style }) => {
     <div
       id="Noteworthy"
       onLoad={() => setOpacity("opacity-100")} // Assuming you want this to run on component mount
-      className={twMerge(style, opacity, " transition-opacity duration-1000 ease-in-out delay-500")}
+      className={twMerge(classname, opacity, " transition-opacity duration-1000 ease-in-out delay-500")}
     >
       <div className='Box w-[1000px]'>
-        <CompTitle number="" title="Other Noteworthy Projects" width="" style="justify-center font-bold text-[24px]" />
+        <CompTitle number="" title="Other Noteworthy Projects" width="" classname="justify-center font-bold text-[24px]" />
         <div className='SecondTil text-[16px] text-[var(--primaryColor)] font-[Inconsolata] flex mt-[10px] justify-center'>view the archive</div>
         <div className='flex flex-row justify-normal flex-wrap transition-all duration-700 ease-in-out'>
           {projects.map((item, index) => {

@@ -9,7 +9,7 @@ const Content: FC<PassContent> = ({ children, className }) => {
   const childrenWithProps = React.Children.map(children, (child) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child as ReactElement, {
-        className: `${child.props.className || ''} ${className || ''}`, // Merge class names safely
+        classname: `${child.props.className || ''} ${className || ''}`, // Merge class names safely
       });
     }
     return child; // Return non-element children as-is

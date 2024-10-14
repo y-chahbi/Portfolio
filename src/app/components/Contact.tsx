@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface ContactProps {
-  style?: string; // Define the style prop as an optional string
+  classname?: string; // Define the classname prop as an optional string
 }
 
-const Contact: React.FC<ContactProps> = ({ style }) => {
+const Contact: React.FC<ContactProps> = ({ classname }) => {
   return (
-    <div id="Contact" className={`${style}`}>
+    <div id="Contact" className={`${classname}`}>
       test
     </div>
   );
