@@ -12,7 +12,7 @@ const Whoami = ({ classname }: WhoamiProps) => {
   const [isHovred, setIsHovered] = useState(false);
   const [IsLoad, setIsLoad] = useState(false);
 
-  useEffect(() => {setIsLoad(prev => true)}, []);
+  useEffect(() => {setIsLoad(true)}, []);
 
   return (
     <div id="Whoami" className={twMerge(classname, " transform ease-in transition-all")}>
