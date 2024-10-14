@@ -14,7 +14,7 @@ import "./globals.css";
 // });
 
 export const metadata: Metadata = {
-  title: "Portfolio v1",
+  title: "Portfolio v0.01",
   description: "Youssef chahbi software eng",
 };
 
