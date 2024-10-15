@@ -44,8 +44,8 @@ const WorkItem = ({ image, title, description, deskUrls, languages, projectLink,
   };
 
   const newDescription = createDescription();
-  const justify = index % 2 ? 'justify-end' : 'justify-start';
-  const direction = index % 2 ? 'right-0' : 'left-0';
+  // const justify = index % 2 ? 'justify-end' : 'justify-start';
+  // const direction = index % 2 ? 'right-0' : 'left-0';
 
   return (
     <div className={`Item flex md:${index % 2 ? 'flex-row' : 'flex-row-reverse'} mt-[40px] justify-between mb-[100px]`}>
