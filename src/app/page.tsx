@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
         <Header style={"Header w-full h-[110px] flex justify-between items-center px-[50px]"}/>
-        <Content className={"w-full px-[150px] flex justify-center font-[Inconsolata]"}>
+        <Content className={"w-full md:px-[150px] flex justify-center font-[Inconsolata] "}>
             <Whoami/>
             <About/>
             <Experience/>

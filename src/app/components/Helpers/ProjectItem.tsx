@@ -23,7 +23,7 @@ const ProjectItem = ({title, description, languages, github, projectLink}:props)
 
     return (
         <div key={Math.random()}
-            className='transition-all duration-300 ease-in-out Item px-8 pb-16 pt-8 w-1/3 bg-[#112240] border-8 border-[var(--background)]
+            className='transition-all duration-300 ease-in-out Item mx-[16px] sm:mx-[0px] px-8 pb-16 pt-8 sm:w-1/2 lg:w-1/3 bg-[#112240] border-8 border-[var(--background)]
                 group relative hover:cursor-pointer hover:relative hover:-translate-y-2'>
               <header className="flex flex-row justify-between items-center pb-[10px] ">
                 <div className='left-side text-[45px]'>

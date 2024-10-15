@@ -15,8 +15,8 @@ const Work = ({ classname }: WorkProps) => {
   };
 
   return (
-    <div id="Work" className={`${classname} mt-[200px]`}>
-      <div className="Box w-[1000px]">
+    <div id="Work" className={`${classname} mt-[200px] `}>
+      <div className="Box md:w-[1000px]">
         <CompTitle number="03. " title="Some Things I’ve Built" width="w-[300px]" />
         <div className="ContentItems">
           {WorkItems.map((item, index) => {

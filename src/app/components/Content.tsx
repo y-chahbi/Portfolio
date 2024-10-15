@@ -26,7 +26,7 @@ const Content: FC<PassContent> = ({ children, className }) => {
 
   return (
         <div>
-            <div className='FixedDiv fixed bottom-0 left-[50px]'>
+            <div className='FixedDiv fixed bottom-0 left-[50px] hidden md:flex'>
                 <div className='socialMedia text-[16px] fixed bottom-[120px] left-[42px] text-[var(--seconderyColor)] flex flex-col transition-all transform'>
                     <Link href={"https://github.com/y-chahbi/"} className='hover:text-[var(--primaryColor)] hover:translate-y-[-6px] ease-in-out duration-300'><FiGithub size={"20px"} style={{marginBottom: "24px"}}/></Link>
                     <Link href={"https://www.instagram.com/c_ussf/"} className='hover:text-[var(--primaryColor)] hover:translate-y-[-6px] ease-in-out duration-300'><FaInstagram size={"20px"} style={{marginBottom: "24px"}}/></Link>
@@ -37,7 +37,7 @@ const Content: FC<PassContent> = ({ children, className }) => {
                 <div className='line w-[2px] h-[100px] bg-[var(--seconderyColor)]'></div>
             </div>
             {childrenWithProps}
-            <div className='FixedDiv fixed bottom-0 right-[50px] transition-all'>
+            <div className='FixedDiv fixed bottom-0 right-[50px] transition-all hidden md:flex'>
                 <div className='email text-[16px] fixed rotate-90 cursor-pointer bottom-[200px] hover:text-[var(--primaryColor)] hover:translate-y-[-6px] ease-in-out duration-300 -right-[25px] text-[var(--seconderyColor)]'> contact@ychahbi.live</div>
                 <div className='line w-[2px] h-[100px] bg-[var(--seconderyColor)]'></div>
             </div>

@@ -13,11 +13,11 @@ const Noteworthy: React.FC<NoteworthyProps> = ({ classname }) => {
   const [loadMore, setLoadMore] = useState(true);
 
   return (
-    <div id="Noteworthy" className={twMerge(classname, " mt-[200px]")}>
-      <div className='Box w-[1000px]'>
+    <div id="Noteworthy" className={twMerge(classname, " mt-[200px] md:px-[60px]")}>
+      <div className='Box flex flex-col w-full md:w-[1000px]'>
         <CompTitle number="" title="Other Noteworthy Projects" width="" classname="justify-center font-bold text-[24px]" />
         <div className='SecondTil text-[16px] text-[var(--primaryColor)] font-[Inconsolata] flex mt-[10px] justify-center'>view the archive</div>
-        <div className='flex flex-row justify-normal flex-wrap transition-all duration-700 ease-in-out'>
+        <div className='flex flex-col sm:flex-row sm:mx-[16px] justify-normal flex-wrap transition-all duration-700 ease-in-out'>
           {projects.map((item, index) => {
             const githubUrl = item.GithubLink ? item.GithubLink.toString() : undefined;
             const projectUrl = item.ProjectLink ? item.ProjectLink.toString() : undefined;

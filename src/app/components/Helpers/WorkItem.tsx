@@ -48,8 +48,8 @@ const WorkItem = ({ image, title, description, deskUrls, languages, projectLink,
   const direction = index % 2 ? 'right-0' : 'left-0';
 
   return (
-    <div className={`Item flex ${index % 2 ? 'flex-row' : 'flex-row-reverse'} mt-[40px] justify-between mb-[100px]`}>
-      <div className='ImageSide relative group'>
+    <div className={`Item flex md:${index % 2 ? 'flex-row' : 'flex-row-reverse'} mt-[40px] justify-between mb-[100px]`}>
+      <div className='ImageSide hidden md:flex relative group'>
         <div className='ImageHolder'>
           <Image
             style={{ width: '550px', height: '400px' }}
@@ -63,13 +63,41 @@ const WorkItem = ({ image, title, description, deskUrls, languages, projectLink,
         <div className='ImageHolderHover transition-all duration-200 ease-in-out absolute w-[550px] h-[400px] bg-[var(--primaryColor)] top-0 left-0 opacity-30 group-hover:cursor-pointer group-hover:opacity-0'></div>
       </div>
 
-      <div className={`DeskSide flex flex-col mt-[40px] relative`}>
+
+
+    <div className={`DeskSide flex flex-col mt-[40px] relative bg-cover`} style={{ backgroundImage: `url(${image})` }} >
+        <div className='holder h-full w-full bg-[var(--background)] opacity-80 px-[40px] py-[60px]'>
+            <div className={twMerge('StaticTile font-[Inconsolata] flex text-[16px] text-[var(--primaryColor)]')}>
+              Featured Project
+            </div>
+            <div className={twMerge('ProjectName flex text-[22px] text-[var(--trdColor)] font-bold font-[Roboto]')}>{title}</div>
+            <div className={twMerge('absHolder ')}>
+                <div className={twMerge('DescriptionOfTheProject text-[17px] w-[600px] py-[30px]   font-[Roboto] text-[var(--seconderyColor)]')}>
+                    {newDescription}
+                </div>
+                <div className={twMerge('Items flex mt-[20px]')}>
+                    {languages.map((item, index) => {
+                        return <span key={index} className='text-[var(--seconderyColor)] mx-[8px]'>{item}</span>;
+                    })}
+                </div>
+                <div className={twMerge('ProjectLinks flex mt-[20px]')}>
+                    <Link href={projectLink[0]?.toString()} className='text-[25px] text-[#ffffffd2] ml-[10px] hover:text-[var(--primaryColor)]'>
+                        <PiGithubLogo />
+                    </Link>
+                    <Link href={projectLink[1]?.toString()} className='text-[25px] text-[#ffffffd2] ml-[10px] hover:text-[var(--primaryColor)]'>
+                        <LuExternalLink />
+                    </Link>
+                </div>
+            </div>
+        </div>
+    </div>
+      {/* <div className={`DeskSide flex flex-col mt-[40px] relative`}>
         <div className={twMerge('StaticTile font-[Inconsolata] flex ', justify, ' text-[16px] text-[var(--primaryColor)]')}>
           Featured Project
         </div>
         <div className={twMerge('ProjectName flex ', justify, ' text-[22px] text-[var(--trdColor)] font-bold font-[Roboto]')}>{title}</div>
         <div className={twMerge('absHolder absolute top-[70px] ', direction)}>
-          <div className={twMerge('DescriptionOfTheProject text-[17px] w-[600px] p-[30px] text-right bg-[#112240] font-[Roboto] text-[var(--seconderyColor)]')}>
+          <div className={twMerge('DescriptionOfTheProject text-[17px] w-[600px] p-[30px] text-right bg-[#112240]   font-[Roboto] text-[var(--seconderyColor)]')}>
             {newDescription}
           </div>
           <div className={twMerge('Items flex ', justify, ' mt-[20px]')}>
@@ -86,7 +114,7 @@ const WorkItem = ({ image, title, description, deskUrls, languages, projectLink,
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
