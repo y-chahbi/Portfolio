@@ -15,7 +15,7 @@ const Noteworthy: React.FC<NoteworthyProps> = ({ classname }) => {
   return (
     <div id="Noteworthy" className={twMerge(classname, " mt-[200px] md:px-[60px]")}>
       <div className='Box flex flex-col w-full md:w-[1000px]'>
-        <CompTitle number="" title="Other Noteworthy Projects" width="" classname="justify-center font-bold text-[24px]" />
+        <CompTitle number="" title="Other Noteworthy Projects" width="" classname="justify-center font-bold text-[24px]" titleStyle=''/>
         <div className='SecondTil text-[16px] text-[var(--primaryColor)] font-[Inconsolata] flex mt-[10px] justify-center'>view the archive</div>
         <div className='flex flex-col sm:flex-row sm:mx-[16px] justify-normal flex-wrap transition-all duration-700 ease-in-out'>
           {projects.map((item, index) => {

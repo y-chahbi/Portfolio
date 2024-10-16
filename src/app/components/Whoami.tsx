@@ -15,12 +15,12 @@ const Whoami = ({ classname }: WhoamiProps) => {
   useEffect(() => {setIsLoad(true)}, []);
 
     return (
-        <div id="Whoami" className={twMerge(classname, " h-screen transform transition-[all 0.25s cubic-bezier(0.645,0.045,0.355,1)] ")}>
+        <div id="Whoami" className={twMerge(classname, " px-[40px] md:px-[80px] h-screen transform transition-[all 0.25s cubic-bezier(0.645,0.045,0.355,1)] ")}>
             <div className="contant w-[1000px] m-[auto]">
                 <p className={twMerge("introduction block transition-opacity duration-[300ms] delay-[300ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>Hi, my name is </p>
-                <p className={twMerge("MyName text-[var(--trdColor)] text-[80px] font-bold font-[Roboto] block  transition-opacity duration-[500ms] delay-[500ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>Chahbi Youssef.</p>
-                <p className={twMerge("WhatIdo text-[var(--seconderyColor)] text-[70px] font-bold font-[Roboto] block  transition-opacity duration-[700ms] delay-[700ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>I build things for the web.</p>
-                <p className={twMerge("Description text-[var(--seconderyColor)] text-[18px] font-[Roboto] w-[600px] my-[20px] block transition-opacity duration-[900ms] delay-[900ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>
+                <p className={twMerge("MyName text-[var(--trdColor)] text-[34px] md:text-[80px] font-bold font-[Roboto] block  transition-opacity duration-[500ms] delay-[500ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>Chahbi Youssef.</p>
+                <p className={twMerge("WhatIdo text-[var(--seconderyColor)] text-[28px] md:text-[70px] font-bold font-[Roboto] block  transition-opacity duration-[700ms] delay-[700ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>I build things for the web.</p>
+                <p className={twMerge("Description text-[var(--seconderyColor)] md:text-[18px] font-[Roboto] md:w-[600px] my-[20px] block transition-opacity duration-[900ms] delay-[900ms]", IsLoad ? " opacity-100 " : " opacity-0 ")}>
                     I’m a software engineer specializing in building (and occasionally designing)
                     exceptional digital experiences. Currently, I’m focused on building accessible,
                     human-centered products at{" "}

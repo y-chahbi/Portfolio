@@ -13,11 +13,11 @@ const About: React.FC<AboutProps> = ({ classname }) => {
   const Myskills = ["JavaScript (ES6+)", "TypeScript", "React", "Eleventy", "Node.js", "WordPress"];
 
   return (
-    <div id="About" className={`${classname}`}>
-      <div className="Box w-[1000px] m-[auto]">
-        <CompTitle number="01. " title="About Me" width="w-[30%]" />
-        <div className="AboutParImageHolder flex justify-between my-[30px]">
-          <div className="text-[var(--seconderyColor)] w-[60%] text-[18px] font-normal font-[Roboto]">
+    <div id="About" className={`${classname} md:px-[40px]`}>
+      <div className="Box px-[40px] md:w-[1000px] m-[auto]">
+        <CompTitle number="01. " title="About Me" width="w-[30%]" titleStyle='' />
+        <div className="AboutParImageHolder flex max-md:flex-col md:justify-between my-[30px]">
+          <div className="text-[var(--seconderyColor)] w-[100%] md:w-[60%] text-[18px] font-normal font-[Roboto]">
             <div className="Main">
               <p className="mb-[20px]">
                 Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
@@ -47,12 +47,12 @@ const About: React.FC<AboutProps> = ({ classname }) => {
               ))}
             </div>
           </div>
-          <div className="ImageHolder relative group mt-[20px]">
-            <div className="BoderdHolder relative top-0 left-0 rounded-md w-[300px] h-[300px] border-2 border-[var(--primaryColor)] group-hover:top-1 group-hover:left-1 transition-all duration-200 ease-in-out" />
-            <div className="BoderdHolder absolute -top-3 -left-3 rounded-md w-[300px] h-[300px] border-2 border-[var(--primaryColor)] group-hover:-top-4 group-hover:-left-4 contrast-100 group-hover:contrast-100 transition-all duration-200 ease-in-out">
+          <div className="ImageHolder relative group max-md:mt-[100px] md:mt-[20px] max-md:m-auto">
+            <div className="BoderdHolder relative top-0 left-0 rounded-md md:w-[200px] md:h-[200px] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] border-2 border-[var(--primaryColor)] group-hover:top-1 group-hover:left-1 transition-all duration-200 ease-in-out" />
+            <div className="BoderdHolder absolute -top-3 -left-3 rounded-md md:w-[200px] md:h-[200px] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] border-2 border-[var(--primaryColor)] group-hover:-top-4 group-hover:-left-4 contrast-100 group-hover:contrast-100 transition-all duration-200 ease-in-out">
               <Image src={img} alt="Picture of the author" />
             </div>
-            <div className="BoderdHolder absolute -top-3 -left-3 rounded-md w-[300px] h-[300px] border-2 border-[var(--primaryColor)] group-hover:-top-4 group-hover:-left-4 bg-[var(--primaryColor)] opacity-50 group-hover:opacity-0 transition-all duration-200 ease-in-out" />
+            <div className="BoderdHolder absolute -top-3 -left-3 rounded-md md:w-[200px] md:h-[200px] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] border-2 border-[var(--primaryColor)] group-hover:-top-4 group-hover:-left-4 bg-[var(--primaryColor)] opacity-50 group-hover:opacity-0 transition-all duration-200 ease-in-out" />
           </div>
         </div>
       </div>

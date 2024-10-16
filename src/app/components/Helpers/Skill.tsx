@@ -6,7 +6,7 @@ interface SkillProps {
 
 const Skill: React.FC<SkillProps> = ({ name }) => {
   return (
-    <div className='Skil flex flex-row items-center w-[300px]'>
+    <div className='Skil flex flex-row items-center w-1/2'>
       <div className={`Icon w-0 h-0 relative border-t-[4px] border-t-transparent
           border-l-[8px] border-l-[var(--primaryColor)] border-b-[4px] border-b-transparent
           mr-[15px]`}>
