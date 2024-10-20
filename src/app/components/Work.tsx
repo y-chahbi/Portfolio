@@ -3,12 +3,14 @@
 import React from "react";
 import CompTitle from "./Helpers/CompTitle";
 import WorkItem from "./Helpers/WorkItem";
-import WorkItems from "../data/WorkItems.json";
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
 
 interface WorkProps {
   classname?: string; // Define the classname prop as optional string
-  convertToArray (urls: string[]) :URL[] ; 
+}
+
+interface WorkPropsSecond {
+    convertToArray (urls: string[]) :URL[] ; 
 }
 
 type WorkPropsata = {
@@ -30,7 +32,7 @@ export const fetchComapny = async () => {
   return res.json();
 };
 
-export const DataComponent: React.FC<WorkProps>  = ({convertToArray}) => {
+export const DataComponent: React.FC<WorkPropsSecond>  = ({convertToArray}) => {
 
     const { data, error, isLoading } = useQuery({
         queryKey: ['Data'],

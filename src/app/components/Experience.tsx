@@ -7,6 +7,9 @@ import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-quer
 
 interface ExperienceProps {
   classname?: string; // Define the classname prop as an optional string
+}
+
+interface ExperProp {
   handelActive(id : number): void;
   CompanyStyle?: string;
   Active: number;
@@ -30,7 +33,7 @@ export const fetchComapny = async () => {
 };
 
 
-export const DataComponent: React.FC<ExperienceProps>  = ({handelActive, CompanyStyle, Active, ActiveClass}) => {
+export const DataComponent: React.FC<ExperProp>  = ({handelActive, CompanyStyle, Active, ActiveClass}) => {
 
   const { data, error, isLoading } = useQuery({
       queryKey: ['Data'],

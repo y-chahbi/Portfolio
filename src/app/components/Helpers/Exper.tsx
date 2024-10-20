@@ -1,5 +1,4 @@
 import React from 'react';
-import Company from './../../data/Companyes.json';
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 
 
