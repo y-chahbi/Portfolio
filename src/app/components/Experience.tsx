@@ -25,7 +25,7 @@ interface ExperienceItem {
   }
 
 export const fetchComapny = async () => {
-  const res = await fetch('http://localhost:8080/company/');
+  const res = await fetch('https://portfolio-server-l3fx.onrender.com/company/');
   if (!res.ok) {
       throw new Error('Network response was not ok');
   }

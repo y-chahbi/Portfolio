@@ -29,7 +29,7 @@ interface Data {
 
 
 export const fetchComapny = async () => {
-  const res = await fetch('http://localhost:8080/projects/');
+  const res = await fetch('https://portfolio-server-l3fx.onrender.com/projects/');
   if (!res.ok) {
       throw new Error('Network response was not ok');
   }
