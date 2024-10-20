@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 //import localFont from "next/font/local";
 import "./globals.css";
-import Icon from '@/app/data/Screen Shot 2024-10-20 at 5.07.49 PM.png'
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",

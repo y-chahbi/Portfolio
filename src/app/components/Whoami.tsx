@@ -9,7 +9,7 @@ interface WhoamiProps {
 }
 
 const Whoami = ({ classname }: WhoamiProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+//   const [isHovered, setIsHovered] = useState(false);
   const [IsLoad, setIsLoad] = useState(false);
 
   useEffect(() => {setIsLoad(true)}, []);
