@@ -10,7 +10,8 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({ classname }) => {
-  const Myskills = ["JavaScript (ES6+)", "TypeScript", "React", "Eleventy", "Node.js", "WordPress"];
+  
+  const Myskills = ["C programming", "C++", "Java", "TypeScript", "JavaScript", "React.js", "Next.js", "Node.js", "Docker", "Git", "Bash"];
 
   return (
     <div id="About" className={`${classname} md:px-[40px]`}>
@@ -20,22 +21,12 @@ const About: React.FC<AboutProps> = ({ classname }) => {
           <div className="text-[var(--seconderyColor)] w-[100%] md:w-[60%] text-[18px] font-normal font-[Roboto]">
             <div className="Main">
               <p className="mb-[20px]">
-                Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
-              </p>
+              Hello! My name is Youssef Chahbi, and I am a passionate coding enthusiast currently studying at<Link href={'https://42.fr'} className="text-[var(--primaryColor)]">  1337</Link> coding school, part of 
+              <Link href={'https://42.fr'} className="text-[var(--primaryColor)]"> 42.fr</Link>
+              . My journey in programming began about four years ago when I started coding in C, C++, and Java. I thrive on tackling challenging projects and enjoy the satisfaction of diving deep into low-level programming.              </p>
               <p className="mb-[20px]">
-                Fast-forward to today, and I’ve had the privilege of working at 
-                <Link href={'/'} className="text-[var(--primaryColor)]"> an advertising agency</Link>, 
-                <Link href={'/'} className="text-[var(--primaryColor)]"> a start-up</Link>, 
-                <Link href={'/'} className="text-[var(--primaryColor)]"> a huge corporation</Link>, and 
-                <Link href={'/'} className="text-[var(--primaryColor)]"> a student-led design studio</Link>
-                . My main focus these days is building accessible, inclusive products and digital experiences at 
-                <Link href={'/'} className="text-[var(--primaryColor)]"> Upstatement </Link>
-                for a variety of clients.
-              </p>
-              <p className="mb-[20px]">
-                I also recently
-                <Link href={'/'} className="text-[var(--primaryColor)]"> launched a course </Link>
-                that covers everything you need to build a web app with the Spotify API using Node & React.
+                {/* <Link href={'/'} className="text-[var(--primaryColor)]"> an advertising agency</Link>,  */}
+                At<Link href={'https://42.fr'} className="text-[var(--primaryColor)]">  1337</Link>, I believe in learning by doing, which has allowed me to hone my skills through hands-on projects rather than traditional internships. As I continue to develop my skills, I am eager to expand my knowledge in JavaScript and Java, particularly with frameworks like React, Next.js, Node.js, and Spring Boot. I am also exploring algorithms to further enhance my programming proficiency.
               </p>
               <p className="mb-[20px]">
                 Here are a few technologies I’ve been working with recently:
