@@ -58,7 +58,7 @@ export const DataComponent: React.FC<NoteworthyPropsItem>  = ({loadMore}) => {
                       <ProjectItem
                           key={index}
                           title={item.title}
-                          description={item.deskription}
+                          description={item.description}
                           languages={item.UsedLanguages}
                           github={githubUrl}
                           projectLink={projectUrl}
@@ -67,7 +67,7 @@ export const DataComponent: React.FC<NoteworthyPropsItem>  = ({loadMore}) => {
                       <ProjectItem
                           key={index}
                           title={item.title}
-                          description={item.deskription}
+                          description={item.description}
                           languages={item.UsedLanguages}
                           github={githubUrl}
                           projectLink={projectUrl}

@@ -42,9 +42,9 @@ export const DataComponent: React.FC<ExperProp>  = ({handelActive, CompanyStyle,
   
   const companyData: ExperienceItem[] = data as ExperienceItem[];
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div className='flex justify-center items-center'>Loading...</div>;
 
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div className='flex justify-center items-center'>Error: {error.message}</div>;
 
   return (
       <>
