@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "next-google-analytics";
 
 //import localFont from "next/font/local";
 import "./globals.css";
@@ -13,6 +12,7 @@ import "./globals.css";
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
+
 
 export const metadata: Metadata  = {
     title: "Youssef Chahbi | Full-Stack Developer & Low-Level Programming Specialist",
@@ -52,7 +52,6 @@ export const metadata: Metadata  = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <GoogleAnalytics trackPageViews gaMeasurementId="G-G177DF6JNV" />
       {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> */}
       <body className={``}>
         {children}

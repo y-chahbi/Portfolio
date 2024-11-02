@@ -4,6 +4,9 @@ import { twMerge } from 'tailwind-merge';
 import Exper from './Helpers/Exper';
 import CompTitle from './Helpers/CompTitle';
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
+import Script from 'next/script';
+const GA_TRACKING_ID = 'G-G177DF6JNV';
+import { useEffect } from 'react';
 
 interface ExperienceProps {
   classname?: string; // Define the classname prop as an optional string
@@ -42,12 +45,37 @@ export const DataComponent: React.FC<ExperProp>  = ({handelActive, CompanyStyle,
   
   const companyData: ExperienceItem[] = data as ExperienceItem[];
 
+
+  useEffect(() => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('config', GA_TRACKING_ID, {
+        });
+      }
+  }, []);
+
   if (isLoading) return <div className='flex justify-center items-center'>Loading...</div>;
 
   if (error) return <div className='flex justify-center items-center'>Error: {error.message}</div>;
 
   return (
       <>
+      {/* Load the Google Analytics script */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `,
+        }}
+      />
             {companyData.map((company, index) => (
               <div
                 key={index}
