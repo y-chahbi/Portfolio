@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 from : https://v4.brittanychiang.com/
-endpoint : https://portfolio-server-l3fx.onrender.com/
+endpoint : /api/v1.01/
 
 First, run the development server:
 
