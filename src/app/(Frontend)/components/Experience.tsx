@@ -28,7 +28,7 @@ interface ExperienceItem {
   }
 
 export const fetchComapny = async () => {
-  const res = await fetch('/api/v1.01/company/');
+  const res = await fetch('/api/v1.01/company');
   if (!res.ok) {
       throw new Error('Network response was not ok');
   }

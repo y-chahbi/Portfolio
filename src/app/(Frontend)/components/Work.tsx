@@ -25,7 +25,7 @@ type WorkPropsata = {
 
 
 export const fetchComapny = async () => {
-  const res = await fetch('/api/v1.01/workitems/');
+  const res = await fetch('/api/v1.01/workitems');
   if (!res.ok) {
       throw new Error('Network response was not ok');
   }
